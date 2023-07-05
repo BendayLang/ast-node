@@ -1,8 +1,8 @@
 #[derive(Debug, Clone, serde::Serialize, serde::Deserialize, PartialEq)]
 pub struct ASTNode {
-    id: u32,
+    pub id: u32,
     #[serde(flatten)]
-    data: ASTNodeData,
+    pub data: ASTNodeData,
 }
 
 #[derive(Debug, Clone, serde::Serialize, serde::Deserialize, PartialEq)]
